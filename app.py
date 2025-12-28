@@ -24,6 +24,7 @@ for i in x:
 
 # st.write(all_value)
 scaler = StandardScaler()
+
 scaled_X = scaler.fit_transform(X)
 final_value = scaler.transform([all_value])
 
@@ -34,6 +35,7 @@ with st.spinner('predicting House price'):
   time.sleep(3)
   st.write(house_price)
   
+
 
 
 
