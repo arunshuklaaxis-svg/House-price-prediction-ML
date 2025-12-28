@@ -16,7 +16,7 @@ y = df.iloc[:,-1]
 st.sidebar.title('🏠 select house feature')
 st.image('https://i.pinimg.com/originals/4b/7e/69/4b7e69a0eb1cf87c5487634c35c4c552.gif')
 all_value = []
-for i in x:
+for i in X:
   min_value = int(X[i].min())
   max_value = int(X[i].max())
   ans = st.sidebar.slider(f'select {i} value',min_value,max_value) 
@@ -37,6 +37,7 @@ with st.spinner('predicting House price'):
   st.success(msg)
   st.markdown('''**Design and devlopment by; Arun shukla**''')
   
+
 
 
 
