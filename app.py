@@ -7,14 +7,14 @@ from sklearn.datasets import fetch_california_housing
 from sklearn.ensemble import RandomForestRegressor
 
 st.title('🏠House Price prediction using ML')
-st.sidebar.image('https://www.picture.lk/photo/23414/portrait-of-cute-anime-boy-aesthetic-201')
+st.sidebar.image('https://wallpapercave.com/wp/wp13949633.jpg')
 
 df=pd.read_csv('house_data.csv')
 X = df.iloc[:,:-3]
 y = df.iloc[:,-1]
 
 st.sidebar.title('🏠 select house feature')
-st.image('https://www.picture.lk/photo/23414/portrait-of-cute-anime-boy-aesthetic-201')
+st.image('https://wallpapercave.com/wp/wp13949633.jpg')
 all_value = []
 for i in X:
   min_value = int(X[i].min())
@@ -40,6 +40,7 @@ with st.spinner('predicting House price'):
   st.success(msg)
   st.markdown('''**Design and devlopment by; Arun shukla**''')
   
+
 
 
 
